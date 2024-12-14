@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <h1>My Portfolio</h1></a>
+        <nav>
+            <ul>    
+                <li><a href="./hobby.html">My Love</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+                <li><a href="./project.html">Projects</a></li>
+                <li><a href="#contact" class="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="about">
+
+        <h1>Hello! I'm Tog'ayev Husan Musurmon o'g'li, I'm a Front-End developer</h1>
+        <p>I specialize in crafting visually appealing and user-friendly web applications.
+            My passion is creating seamless user experiences that make a difference.</p>
+    </section>
+
+    <section class="passions" id="hobby">
+        <h2>What I Love</h2>
+        <div class="card">
+            <img src="./images/bf.jpg" alt="Design">
+            <h3>UI/UX Design</h3>
+        </div>
+        <div class="card">
+            <img src="./images/build.jpg" alt="Coding">
+            <h3>Building Projects</h3>
+        </div>
+        <div class="card">
+            <img src="./images/c.jpg" alt="Community">
+            <h3>Contributing to Communities</h3>
+        </div>
+    </section>
+
+    <section class="portfolio" id="skills">
+        <h2>Skills</h2>
+        <div class="card">
+            <img src="./images/html.jpg" alt="HTML">
+            <h2>HTML</h2>
+            <h3>Building structure</h3>
+        </div>
+        <div class="card">
+            <img src="./images/css.jpg" alt="CSS">
+            <h2>CSS</h2>
+            <h3>Styling interfaces</h3>
+        </div>
+        <div class="card">
+            <img src="./images/build.jpg" alt="JavaScript">
+            <h2>JavaScript</h2>
+            <h3>Adding interactivity</h3>
+        </div>
+    </section>
+
+    <section class="portfolio" id="project">
+        <h2>My Projects</h2>
+        <a href="C:/Users/user/Desktop/TUIT/husan/index.html">
+            <div class="card">
+                <img src="./images/pf.jpg" alt="Project 1">
+                <h3>Portfolio Website</h3>
+            </div>
+        </a>
+        <a href="C:/Users/user/Desktop/TUIT/husan/index.html">
+            <div class="card">
+                <img src="./images/v.jpg" alt="Project 2">
+                <h3>Valyuta Konvertori</h3>
+            </div>
+        </a>
+        <a href="C:/Users/user/Desktop/TUIT/husan/index.html">
+            <div class="card">
+                <img src="./images/bp.jpg" alt="Project 3">
+                <h3>Blog Postlar Sahifasi</h3>
+            </div>
+        </a>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-icons">
+            <a href="https://github.com/dashboard">GitHub</a>
+            <a href="https://t.me/Togayev_Husan">Telegram</a>
+            <a href="mailto:khusantagayev01@gmail.com">Email</a>
+            <a href="tel:+998335714400">Phone</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tog'ayev Husan. All Rights Reserved.</p>
+    </footer>
+</body>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+</script>
+
+</html>
